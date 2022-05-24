@@ -112,10 +112,7 @@ const ScrollableTabbar: React.FC<Props> = ({
 		<View style={styles.container}>
 			{icon ? icon : null}
 			{isSearchBarShown && searchBar ? (
-				<View>
-					{searchBar}
-					{getValues()}
-				</View>
+				<View>{searchBar}</View>
 			) : (
 				<ScrollView
 					ref={scrollViewRef}
